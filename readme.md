@@ -3,11 +3,11 @@
 
 _A very tiny and simple Stopwatch_
 
-**­­µStopwatch** is a simple _stopwatch_, developed as a sample application for learn how to use Onsen UI and how to publish to Firefox OS.
+**­­µStopwatch** is a simple _stopwatch_, developed as a sample application for learn how to use Onsen UI and develop for Firefox OS.
 
-Features
---------
+[Live demo](http://jfmdev.github.io/uStopwatch/ "µStopwatch - Live demo")
 
+[Mozilla Marketplace](https://marketplace.firefox.com/app/%C2%B5stopwatch/ "µStopwatch - Mozilla Marketplace")
 
 License
 -------
