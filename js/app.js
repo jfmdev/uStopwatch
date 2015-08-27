@@ -6,11 +6,12 @@ module.controller('mainCtrl', function ($scope) {
     $scope.interval = null;
     $scope.list = [];
     $scope.start = null;
+    $scope.counter = 0;
     
     // Private function for update the timer.
     function updateTimer() {
         var now = new Date();
-        $scope.timer = now.getTime() - $scope.start.toDate().getTime();
+        $scope.timer = now.getTime() - $scope.start.toDate().getTime() + $scope.counter;
         $scope.$apply();
     }
     
@@ -18,17 +19,19 @@ module.controller('mainCtrl', function ($scope) {
     $scope.play = function() {
         // Verify if the clock is not already running.
         if($scope.interval === null) {
-            // Set interval.
+            // Set interval and start date.
             $scope.interval = setInterval(updateTimer, 155);
-            
-            // Define start date.
-            if($scope.start === null) $scope.start = moment();
+            $scope.start = moment();
         }
     };
     $scope.pause = function() {
         // Stop interval.
         clearInterval($scope.interval);
         $scope.interval = null;
+        
+        // Increase counter.
+        var now = new Date();
+        $scope.counter += now.getTime() - $scope.start.toDate().getTime();
     };
     $scope.stop = function() {
         // Stop interval.
@@ -44,9 +47,10 @@ module.controller('mainCtrl', function ($scope) {
             });
         }
     
-        // Clear start date and timer..
+        // Clear start date, counter and timer.
         $scope.timer = 0;
         $scope.start = null;
+        $scope.counter = 0;
     };
 
     // Parse number to an integer with at least two digits.
