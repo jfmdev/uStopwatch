@@ -1,7 +1,7 @@
 ­­µStopwatch
 =================
 
-_A very tiny and simple Stopwatch_
+_A very tiny and simple stopwatch_
 
 **­­µStopwatch** is a simple _stopwatch_, developed as a sample application for learn how to use Onsen UI and develop for Firefox OS.
 
@@ -23,4 +23,4 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with TelemarketingLogs. If not, see <http://www.gnu.org/licenses/>.
+along with ­­µStopwatch. If not, see <http://www.gnu.org/licenses/>.

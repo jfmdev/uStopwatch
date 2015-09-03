@@ -11,5 +11,16 @@
     "name": "KudaLab",
     "url": "http://snipurl.com/kudalab"
   },
-  "default_locale": "en"
+  "default_locale": "en",
+  "version": "1.0.1",
+  "locales": {
+    "es": {
+      "name": "µCronometro",
+      "description": "Un cronómetro simple y fácil de utilizar"
+    },
+    "fr": {
+      "name": "µChronometre",
+      "description": "Un chronomètre simple et facile à utiliser "
+    }
+  }
 }
