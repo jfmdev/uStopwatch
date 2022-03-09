@@ -1,3 +1,5 @@
+> **Notice:** this project has been archived due to Firefox OS being discontinued.
+
 ­­µStopwatch
 =================
 
