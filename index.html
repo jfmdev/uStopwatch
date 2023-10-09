@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  
+  <title>µStopwatch</title>  
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Onsen UI -->
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
+  <link rel="stylesheet" href="lib/onsen/css/onsen-css-components-blue-basic-theme.css">  
+  <script type="text/javascript" src="lib/onsen/js/angular/angular.min.js"></script>    
+  <script type="text/javascript" src="lib/onsen/js/onsenui.min.js"></script>    
+  
+  <!-- App -->
+  <link rel="stylesheet" href="css/app.css"/>
+  <script type="text/javascript" src="js/app.js"></script>    
+</head>
+
+  <body ng-controller="mainCtrl">
+    <ons-page>
+      <ons-toolbar>
+        <div class="center"><strong>µStopwatch</strong></div>
+      </ons-toolbar>
+
+      <ons-row class="display">
+        <ons-col>
+          <strong>{{parseIntBis(timer/60000)}}:{{parseIntBis((timer/1000)%60)}}</strong>.<small>{{parseIntBis((timer%1000)/10)}}</small>
+        </ons-col>
+      </ons-row>
+      <ons-row class="buttons">
+          <ons-col>
+            <button ng-click="play()">
+              Play
+            </button>
+          </ons-col>
+          <ons-col>
+            <button ng-click="pause()">
+              Pause
+            </button>
+          </ons-col>
+          <ons-col>
+            <button ng-click="stop()">
+              Stop
+            </button>
+          </ons-col>
+        </ons-row>
+        <br/>
+        <ons-row ng-show="list.length > 0">
+          <ons-col>
+            <ons-list class="registers">
+              <ons-list-header>Registers</ons-list-header>
+              <ons-list-item ng-repeat="item in list">
+                <span class="hour">{{item.start.format('HH:mm:ss')}}</span> - {{formatTime(item.time)}}
+              </ons-list-item>
+            </ons-list>
+          </ons-col>
+        </ons-row>
+    </ons-page>
+
+  </body>
+</html>
