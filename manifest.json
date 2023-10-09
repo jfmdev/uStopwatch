@@ -1,0 +1,46 @@
+{
+  "short_name": "µStopwatch",
+  "name": "µStopwatch: A simple and easy to use stopwatch",
+  "description": "A simple and easy to use stopwatch",
+  "icons": [
+    {
+      "src": "/img/icon-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/img/icon-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/img/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "150x150"
+    }
+  ],
+  "background_color": "#F25200",
+  "display": "standalone",
+  "id": "/index.html",
+  "start_url": "/index.html",
+  "theme_color": "#F25200",
+  "screenshots": [
+    {
+      "src": "/img/screenshot-1.png",
+      "type": "image/png",
+      "sizes": "321x511",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/img/screenshot-2.png",
+      "type": "image/png",
+      "sizes": "321x511",
+      "form_factor": "narrow"
+    }
+  ]
+}
